@@ -176,6 +176,50 @@
       opacity:1;
     }
     
+    /* Estilos para los nuevos botones */
+    .button-container {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    
+    .share-button,
+    .check-button {
+      background: #00ffc8;
+      color: #000;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px rgba(0,255,200,0.3);
+    }
+    
+    .share-button:hover,
+    .check-button:hover {
+      background: #00e6b8;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,255,200,0.4);
+    }
+    
+    .check-button {
+      background: #ff6b6b;
+      box-shadow: 0 4px 15px rgba(255,107,107,0.3);
+    }
+    
+    .check-button:hover {
+      background: #ff5252;
+      box-shadow: 0 6px 20px rgba(255,107,107,0.4);
+    }
+    
     /* Responsivo para móviles */
     @media (max-width: 768px) {
       .nav {
@@ -202,6 +246,17 @@
       
       .video-container {
         padding:16px;
+      }
+      
+      .button-container {
+        flex-direction: column;
+        gap: 10px;
+      }
+      
+      .share-button,
+      .check-button {
+        width: 100%;
+        max-width: 250px;
       }
     }
     
@@ -248,8 +303,17 @@
   
   <div class="share-section">
     <div class="share-content">
-      <h3 class="share-title">Compartir este video</h3>
-      <input type="text" class="share-url" value="https://tudominio.com/video3/" readonly onclick="copyToClipboard(this)">
+      <h3 class="share-title">Acciones</h3>
+      <div class="button-container">
+        <button class="share-button" onclick="shareVideo()">
+          <span>📤</span>
+          <span>Compartir</span>
+        </button>
+        <a href="https://tools.checkqrpay.com/pruebas-kiosko-limbo/68f9fe303e8058a0b63cb057" class="check-button" target="_blank">
+          <span>✅</span>
+          <span>Check</span>
+        </a>
+      </div>
       <div class="copy-message" id="copyMessage">¡Enlace copiado al portapapeles!</div>
     </div>
   </div>
@@ -285,6 +349,66 @@
           }, 2000);
         });
       }
+    }
+    
+    // Función para compartir el video
+    function shareVideo() {
+      const videoUrl = window.location.href;
+      const videoTitle = "Vídeo 3";
+      
+      // Verificar si el navegador soporta Web Share API
+      if (navigator.share) {
+        navigator.share({
+          title: videoTitle,
+          text: "Mira este video increíble",
+          url: videoUrl
+        }).then(() => {
+          console.log('Video compartido exitosamente');
+        }).catch(err => {
+          console.log('Error al compartir:', err);
+          fallbackShare(videoUrl);
+        });
+      } else {
+        // Fallback para navegadores que no soportan Web Share API
+        fallbackShare(videoUrl);
+      }
+    }
+    
+    // Función fallback para compartir
+    function fallbackShare(url) {
+      // Copiar URL al portapapeles
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(() => {
+          showShareMessage("¡Enlace copiado! Compártelo donde quieras");
+        });
+      } else {
+        // Fallback más antiguo
+        const textArea = document.createElement('textarea');
+        textArea.value = url;
+        document.body.appendChild(textArea);
+        textArea.select();
+        try {
+          document.execCommand('copy');
+          showShareMessage("¡Enlace copiado! Compártelo donde quieras");
+        } catch (err) {
+          showShareMessage("Enlace: " + url);
+        }
+        document.body.removeChild(textArea);
+      }
+    }
+    
+    // Mostrar mensaje de compartir
+    function showShareMessage(text) {
+      const message = document.getElementById('copyMessage');
+      message.textContent = text;
+      message.classList.add('show');
+      setTimeout(() => {
+        message.classList.remove('show');
+        // Restaurar texto original después de un momento
+        setTimeout(() => {
+          message.textContent = "¡Enlace copiado al portapapeles!";
+        }, 500);
+      }, 3000);
     }
     
     // Función para forzar reproducción automática con audio inteligente
