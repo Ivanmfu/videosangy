@@ -185,11 +185,11 @@
       </video>
       <div class="video-placeholder" style="display: none;">
         <div class="placeholder-icon">📹</div>
-        <div class="placeholder-title">Victor</div>
+        <div class="placeholder-title">Vídeo 1</div>
         <div class="placeholder-hint">Sube tu video aquí</div>
       </div>
       <div class="card-overlay">
-        <div class="title">Victor</div>
+        <div class="title">Vídeo 1</div>
         <div class="hint">Toca para reproducir</div>
       </div>
       <div class="play-indicator">▶️</div>
@@ -202,11 +202,11 @@
       </video>
       <div class="video-placeholder" style="display: none;">
         <div class="placeholder-icon">📹</div>
-        <div class="placeholder-title">Lucho</div>
+        <div class="placeholder-title">Vídeo 2</div>
         <div class="placeholder-hint">Sube tu video aquí</div>
       </div>
       <div class="card-overlay">
-        <div class="title">Lucho</div>
+        <div class="title">Vídeo 2</div>
         <div class="hint">Toca para reproducir</div>
       </div>
       <div class="play-indicator">▶️</div>
@@ -219,11 +219,11 @@
       </video>
       <div class="video-placeholder" style="display: none;">
         <div class="placeholder-icon">📹</div>
-        <div class="placeholder-title">Pello</div>
+        <div class="placeholder-title">Vídeo 3</div>
         <div class="placeholder-hint">Sube tu video aquí</div>
       </div>
       <div class="card-overlay">
-        <div class="title">Pello</div>
+        <div class="title">Vídeo 3</div>
         <div class="hint">Toca para reproducir</div>
       </div>
       <div class="play-indicator">▶️</div>
@@ -236,11 +236,11 @@
       </video>
       <div class="video-placeholder" style="display: none;">
         <div class="placeholder-icon">📹</div>
-        <div class="placeholder-title">Irene</div>
+        <div class="placeholder-title">Vídeo 4</div>
         <div class="placeholder-hint">Sube tu video aquí</div>
       </div>
       <div class="card-overlay">
-        <div class="title">Irene</div>
+        <div class="title">Vídeo 4</div>
         <div class="hint">Toca para reproducir</div>
       </div>
       <div class="play-indicator">▶️</div>
@@ -253,11 +253,11 @@
       </video>
       <div class="video-placeholder" style="display: none;">
         <div class="placeholder-icon">📹</div>
-        <div class="placeholder-title">Malen</div>
+        <div class="placeholder-title">Vídeo 5</div>
         <div class="placeholder-hint">Sube tu video aquí</div>
       </div>
       <div class="card-overlay">
-        <div class="title">Malen</div>
+        <div class="title">Vídeo 5</div>
         <div class="hint">Toca para reproducir</div>
       </div>
       <div class="play-indicator">▶️</div>
@@ -270,11 +270,11 @@
       </video>
       <div class="video-placeholder" style="display: none;">
         <div class="placeholder-icon">📹</div>
-        <div class="placeholder-title">Iñaki</div>
+        <div class="placeholder-title">Vídeo 6</div>
         <div class="placeholder-hint">Sube tu video aquí</div>
       </div>
       <div class="card-overlay">
-        <div class="title">Iñaki</div>
+        <div class="title">Vídeo 6</div>
         <div class="hint">Toca para reproducir</div>
       </div>
       <div class="play-indicator">▶️</div>
@@ -287,11 +287,11 @@
       </video>
       <div class="video-placeholder" style="display: none;">
         <div class="placeholder-icon">📹</div>
-        <div class="placeholder-title">Iván</div>
+        <div class="placeholder-title">Vídeo 7</div>
         <div class="placeholder-hint">Sube tu video aquí</div>
       </div>
       <div class="card-overlay">
-        <div class="title">Iván</div>
+        <div class="title">Vídeo 7</div>
         <div class="hint">Toca para reproducir</div>
       </div>
       <div class="play-indicator">▶️</div>

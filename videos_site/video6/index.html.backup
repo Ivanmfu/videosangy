@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pello - Galería de Videos</title>
+  <title>Vídeo 6 - Galería de Videos</title>
   
   <!-- Meta tags para compartir en redes sociales -->
-  <meta name="description" content="Mira este video: Vídeo 3">
-  <meta property="og:title" content="Pello">
+  <meta name="description" content="Mira este video: Vídeo 6">
+  <meta property="og:title" content="Vídeo 6">
   <meta property="og:description" content="Mira este video en nuestra galería">
   <meta property="og:type" content="video.other">
-  <meta property="og:url" content="https://tudominio.com/video3/">
-  <meta property="og:video" content="https://tudominio.com/video3/video.mp4">
+  <meta property="og:url" content="https://tudominio.com/video6/">
+  <meta property="og:video" content="https://tudominio.com/video6/video.mp4">
   <meta property="og:video:type" content="video/mp4">
   <meta property="og:site_name" content="Galería de Videos">
   
   <!-- Meta tags para Twitter -->
   <meta name="twitter:card" content="player">
-  <meta name="twitter:title" content="Pello">
+  <meta name="twitter:title" content="Vídeo 6">
   <meta name="twitter:description" content="Mira este video en nuestra galería">
-  <meta name="twitter:player" content="https://tudominio.com/video3/">
+  <meta name="twitter:player" content="https://tudominio.com/video6/">
   
   <style>
     body { 
@@ -275,7 +275,7 @@
 <body>
   <div class="header">
     <div class="nav">
-      <h1 class="title">Pello</h1>
+      <h1 class="title">Vídeo 6</h1>
       <a href="../" class="back-link">← Galería</a>
     </div>
   </div>
@@ -284,7 +284,7 @@
     <div class="video-wrapper">
       <video controls autoplay playsinline preload="auto" id="mainVideo">
         <source src="video.mp4" type="video/mp4">
-        <source src="video3.mp4" type="video/mp4">
+        <source src="video6.mp4" type="video/mp4">
         Tu navegador no soporta la reproducción de video.
       </video>
       
@@ -292,7 +292,7 @@
       <div class="video-placeholder" id="placeholder">
         <div class="placeholder-icon">📹</div>
         <h3 style="color:#00ffc8; margin:0 0 10px 0;">Video pendiente</h3>
-        <p style="color:#bbb; margin:0; font-size:14px;">Sube tu archivo como <strong>video.mp4</strong> o <strong>video3.mp4</strong></p>
+        <p style="color:#bbb; margin:0; font-size:14px;">Sube tu archivo como <strong>video.mp4</strong> o <strong>video6.mp4</strong></p>
       </div>
       
       <div class="video-info">
@@ -354,7 +354,7 @@
     // Función para compartir el video
     function shareVideo() {
       const videoUrl = window.location.href;
-      const videoTitle = "Vídeo 3";
+      const videoTitle = "Vídeo 6";
       
       // Verificar si el navegador soporta Web Share API
       if (navigator.share) {
