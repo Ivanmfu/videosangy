@@ -397,11 +397,6 @@
           });
         }
         
-        // Prevenir que el click en el video interfiera con la navegación
-        video.addEventListener('click', function(e) {
-          e.preventDefault();
-        });
-        
         // Intentar cargar el video inmediatamente
         video.load();
       });
