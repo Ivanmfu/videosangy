@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vídeo 8 - Galería de Videos</title>
+  <title>Vídeo 9 - Galería de Videos</title>
   
   <!-- Meta tags para compartir en redes sociales -->
-  <meta name="description" content="Mira este video: Vídeo 8">
-  <meta property="og:title" content="Vídeo 8">
+  <meta name="description" content="Mira este video: Vídeo 9">
+  <meta property="og:title" content="Vídeo 9">
   <meta property="og:description" content="Mira este video en nuestra galería">
   <meta property="og:type" content="video.other">
-  <meta property="og:url" content="https://ivanmfu.github.io/videosangy/video8/">
-  <meta property="og:video" content="https://ivanmfu.github.io/videosangy/video8/video.mp4">
+  <meta property="og:url" content="https://ivanmfu.github.io/videosangy/video9/">
+  <meta property="og:video" content="https://ivanmfu.github.io/videosangy/video9/video.mp4">
   <meta property="og:video:type" content="video/mp4">
   <meta property="og:site_name" content="Galería de Videos">
   
   <!-- Meta tags para Twitter -->
   <meta name="twitter:card" content="player">
-  <meta name="twitter:title" content="Vídeo 8">
+  <meta name="twitter:title" content="Vídeo 9">
   <meta name="twitter:description" content="Mira este video en nuestra galería">
-  <meta name="twitter:player" content="https://ivanmfu.github.io/videosangy/video8/">
+  <meta name="twitter:player" content="https://ivanmfu.github.io/videosangy/video9/">
   
   <style>
     body { 
@@ -275,7 +275,7 @@
 <body>
   <div class="header">
     <div class="nav">
-      <h1 class="title">Vídeo 8</h1>
+      <h1 class="title">Vídeo 9</h1>
       <a href="../" class="back-link">← Galería</a>
     </div>
   </div>
@@ -284,7 +284,7 @@
     <div class="video-wrapper">
       <video controls autoplay playsinline preload="auto" id="mainVideo">
         <source src="video.mp4" type="video/mp4">
-        <source src="video8.mp4" type="video/mp4">
+        <source src="video9.mp4" type="video/mp4">
         Tu navegador no soporta la reproducción de video.
       </video>
       
@@ -292,7 +292,7 @@
       <div class="video-placeholder" id="placeholder">
         <div class="placeholder-icon">📹</div>
         <h3 style="color:#00ffc8; margin:0 0 10px 0;">Video pendiente</h3>
-        <p style="color:#bbb; margin:0; font-size:14px;">Sube tu archivo como <strong>video.mp4</strong> o <strong>video8.mp4</strong></p>
+        <p style="color:#bbb; margin:0; font-size:14px;">Sube tu archivo como <strong>video.mp4</strong> o <strong>video9.mp4</strong></p>
       </div>
       
       <div class="video-info">
@@ -354,13 +354,13 @@
     // Función para compartir el video
     function shareVideo() {
       const videoUrl = window.location.href;
-      const videoTitle = "Vídeo 8";
+      const videoTitle = "Vídeo 9";
       
       // Verificar si el navegador soporta Web Share API
       if (navigator.share) {
         navigator.share({
           title: videoTitle,
-          
+          text: "Mira este video increíble",
           url: videoUrl
         }).then(() => {
           console.log('Video compartido exitosamente');
