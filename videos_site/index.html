@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería de vídeos</title>
+  <style>
+    :root { --accent:#00ffc8; }
+    body { background:#111; color:#fff; font-family:system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, sans-serif; margin:0; }
+    header { padding:24px 16px; text-align:center; border-bottom:1px solid #333; }
+    h1 { margin:0; font-weight:700; color:var(--accent); }
+    
+    /* Grid optimizada para videos verticales */
+    .grid { 
+      display:grid; 
+      grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); 
+      gap:20px; 
+      padding:20px; 
+      max-width:1200px; 
+      margin:0 auto; 
+    }
+    
+    /* Cards mejoradas para preview de videos verticales */
+    a.card { 
+      display:block; 
+      border:1px solid #333; 
+      border-radius:12px; 
+      padding:16px; 
+      text-decoration:none; 
+      color:#fff; 
+      transition:transform .1s ease, box-shadow .1s ease, border-color .1s ease; 
+      background:#181818; 
+      aspect-ratio: 9/16; /* Proporción vertical */
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      text-align:center;
+    }
+    
+    a.card:hover { 
+      transform:translateY(-2px); 
+      border-color:var(--accent); 
+      box-shadow:0 6px 20px rgba(0,0,0,.35); 
+    }
+    
+    .title { 
+      font-size:18px; 
+      font-weight:600; 
+      margin-bottom:8px; 
+      color:var(--accent); 
+    }
+    
+    .hint { 
+      font-size:14px; 
+      color:#bbb; 
+    }
+    
+    /* Responsivo para móviles */
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+        gap:15px;
+        padding:15px;
+      }
+      header { padding:20px 16px; }
+      .title { font-size:16px; }
+      .hint { font-size:13px; }
+    }
+    
+    footer { 
+      text-align:center; 
+      padding:24px; 
+      color:#888; 
+      border-top:1px solid #333; 
+      font-size:13px; 
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Galería de vídeos</h1>
+    <p style="color:#bbb;margin-top:8px;">Cada enlace abre su vídeo en una página separada.</p>
+  </header>
+  <main class="grid">
+    <a class="card" href="video1/"><div class="title">Vídeo 1</div><div class="hint">Abrir Vídeo 1</div></a>
+<a class="card" href="video2/"><div class="title">Vídeo 2</div><div class="hint">Abrir Vídeo 2</div></a>
+<a class="card" href="video3/"><div class="title">Vídeo 3</div><div class="hint">Abrir Vídeo 3</div></a>
+<a class="card" href="video4/"><div class="title">Vídeo 4</div><div class="hint">Abrir Vídeo 4</div></a>
+<a class="card" href="video5/"><div class="title">Vídeo 5</div><div class="hint">Abrir Vídeo 5</div></a>
+<a class="card" href="video6/"><div class="title">Vídeo 6</div><div class="hint">Abrir Vídeo 6</div></a>
+<a class="card" href="video7/"><div class="title">Vídeo 7</div><div class="hint">Abrir Vídeo 7</div></a>
+<a class="card" href="video8/"><div class="title">Vídeo 8</div><div class="hint">Abrir Vídeo 8</div></a>
+<a class="card" href="video9/"><div class="title">Vídeo 9</div><div class="hint">Abrir Vídeo 9</div></a>
+<a class="card" href="video10/"><div class="title">Vídeo 10</div><div class="hint">Abrir Vídeo 10</div></a>
+  </main>
+  <footer>
+    <p>Plantilla estática para Netlify / GitHub Pages. Puedes editar nombres en este archivo.</p>
+  </footer>
+</body>
+</html>
